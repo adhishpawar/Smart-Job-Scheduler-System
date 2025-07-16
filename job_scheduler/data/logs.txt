@@ -1,0 +1,3 @@
+[datetime.now()] Added job: Email job (Priority: 2) 
+[datetime.now()] Executed Job: Email job 
+[datetime.now()] Added job: Backup Job (Priority: 1) 
