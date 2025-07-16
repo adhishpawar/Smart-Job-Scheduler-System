@@ -22,3 +22,9 @@ class Schedular:
             log_action(f"Executed Job: {job.name}")
         else:
             print("No Jobs to run.  ")
+
+    def list_jobs(self):
+        print("\n --- current Jobs")
+        for _,_, job in self.store.queue:
+            print(f"{job.id[:8]} | {job.name}  | [{job.category.value}] | {job.priority} | {job.duration}s | {job.status}")
+    
