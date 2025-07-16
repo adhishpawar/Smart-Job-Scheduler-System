@@ -1,12 +1,7 @@
-[datetime.now()] Added job: Email job (Priority: 2) 
-[datetime.now()] Executed Job: Email job 
-[datetime.now()] Added job: Backup Job (Priority: 1) 
-[datetime.now()] Added job: Train AI Model (Priority: 2) 
-[datetime.now()] Added job: Train AI Model (Priority: 2) 
-[datetime.now()] Executed Job: Train AI Model 
-[datetime.now()] Added job: Train AI model (Priority: 2) 
-[datetime.now()] Executed Job: Train AI model 
-[datetime.now()] Added job: Train DL Model (Priority: 3) 
-[datetime.now()] Added job: Train DL model (Priority: 3) 
-[datetime.now()] Executed job: Train DL Model 
-[datetime.now()] Executed job: Train DL model 
+[datetime.now()] Added job: data (Priority: 2) 
+[datetime.now()] Added job: System (Priority: 2) 
+[datetime.now()] Added job: Traaining (Priority: 3) 
+[datetime.now()] Added job: Dummy (Priority: 1) 
+[datetime.now()] Added job: System backup (Priority: 2) 
+[datetime.now()] Added job: data processing (Priority: 3) 
+[datetime.now()] Added job: Train Model (Priority: 1) 

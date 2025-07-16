@@ -2,6 +2,7 @@ from models.scheduler import Schedular
 from models.job import Job
 from core.executor import Executor
 from utils.job_input import get_job_from_user
+from core.round_robin import run_jobs_round_robin
 
 def menu():
     print("\n=== Smart Job Scheduler ===")
@@ -9,7 +10,10 @@ def menu():
     print("2. Run One Job")
     print("3. Run All Jobs")
     print("4. List All Jobs")
-    print("5. Exit")
+    print("5. Delete a Job")
+    print("6. Update Job Priority")
+    print("7. Run Round-Robin Scheduler")
+    print("8. Exit")
 
 schedular  = Schedular()
 
@@ -32,9 +36,21 @@ while True:
         schedular.list_jobs()
     
     elif choice == "5":
+        job_id = input("Enter job id: ").strip()
+        schedular.delete_job(job_id)
+    
+    elif choice == "6":
+        job_id = input("Enter job id: ").strip()
+        new_priority = int(input("Enter new priority: "))
+        schedular.update_priority(job_id, new_priority) 
+    
+    elif choice == "7":
+        quantum = int(input("Enter time qunatum in seconds: "))
+        run_jobs_round_robin(schedular.all_jobs, quantum)
+
+    elif choice == "8":
         print("byeee")
         break
-
 
     else:
         print("Invalid choice.")
