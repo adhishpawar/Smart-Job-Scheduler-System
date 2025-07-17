@@ -5,3 +5,13 @@
 [datetime.now()] Added job: System backup (Priority: 2) 
 [datetime.now()] Added job: data processing (Priority: 3) 
 [datetime.now()] Added job: Train Model (Priority: 1) 
+[datetime.now()] Added job: Train AI Application (Priority: 2) 
+[datetime.now()] Added job: Train AI model (Priority: 1) 
+[datetime.now()] Added job: Training AI Model (Priority: 1) 
+[datetime.now()] Added job: Train AI Model (Priority: 1) 
+[datetime.now()] Added job: develope new Web app (Priority: 1) 
+[datetime.now()] Added job: Train AI ML model (Priority: 1) 
+[datetime.now()] Added job: Adhish (Priority: 2) 
+[datetime.now()] Added job: Hello Adhish (Priority: 3) 
+[datetime.now()] Executed Job: Adhish 
+[datetime.now()] Updated priority of Adhish from 1 to 3 

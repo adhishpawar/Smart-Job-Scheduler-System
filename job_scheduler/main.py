@@ -3,6 +3,7 @@ from models.job import Job
 from core.executor import Executor
 from utils.job_input import get_job_from_user
 from core.round_robin import run_jobs_round_robin
+from db.db_helper import insert_job
 
 def menu():
     print("\n=== Smart Job Scheduler ===")
@@ -24,7 +25,7 @@ while True:
 
     if choice == "1":
         job = get_job_from_user()
-        schedular.add_job(job)  
+        schedular.add_job(job) 
 
     elif choice == "2":
         schedular.run_one()
@@ -46,7 +47,9 @@ while True:
     
     elif choice == "7":
         quantum = int(input("Enter time qunatum in seconds: "))
-        run_jobs_round_robin(schedular.all_jobs, quantum)
+        jobs = schedular.store.get_all_jobs()
+        run_jobs_round_robin(jobs, quantum)
+
 
     elif choice == "8":
         print("byeee")
